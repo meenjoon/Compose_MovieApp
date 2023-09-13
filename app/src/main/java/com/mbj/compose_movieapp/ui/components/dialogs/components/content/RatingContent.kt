@@ -1,4 +1,4 @@
-package com.mbj.compose_movieapp.ui.components.dialog.components.content
+package com.mbj.compose_movieapp.ui.components.dialogs.components.content
 
 import android.content.res.ColorStateList
 import android.widget.RatingBar

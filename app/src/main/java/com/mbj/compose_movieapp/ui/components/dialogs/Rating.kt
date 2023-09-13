@@ -1,4 +1,4 @@
-package com.mbj.compose_movieapp.ui.components.dialog
+package com.mbj.compose_movieapp.ui.components.dialogs
 
 import androidx.compose.runtime.Composable
 import com.mbj.compose_movieapp.ui.models.dialog.DialogButton

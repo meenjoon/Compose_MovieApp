@@ -1,4 +1,4 @@
-package com.mbj.compose_movieapp.ui.components.dialog.components.button
+package com.mbj.compose_movieapp.ui.components.dialogs.components.button
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

@@ -3,10 +3,10 @@ package com.mbj.compose_movieapp.ui.models.dialog
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import com.mbj.compose_movieapp.R
-import com.mbj.compose_movieapp.ui.components.dialog.Alert
-import com.mbj.compose_movieapp.ui.components.dialog.Default
-import com.mbj.compose_movieapp.ui.components.dialog.DialogPopup
-import com.mbj.compose_movieapp.ui.components.dialog.Rating
+import com.mbj.compose_movieapp.ui.components.dialogs.Alert
+import com.mbj.compose_movieapp.ui.components.dialogs.Default
+import com.mbj.compose_movieapp.ui.components.dialogs.DialogPopup
+import com.mbj.compose_movieapp.ui.components.dialogs.Rating
 import com.mbj.compose_movieapp.ui.models.buttons.LeadingIconData
 import com.mbj.compose_movieapp.ui.theme.Compose_MovieAppTheme
 

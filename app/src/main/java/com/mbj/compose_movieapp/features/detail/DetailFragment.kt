@@ -69,20 +69,20 @@ class DetailFragment: Fragment() {
                         }
 
                         is DetailUiEffect.OpenUrl -> {
-//                            findNavController().safeNavigate(
-//                                DetailFragmentDirections.actionDetailToImdbDialog(
-//                                    it.url
-//                                )
-//                            )
+                            findNavController().safeNavigate(
+                                DetailFragmentDirections.actionDetailToImdbDialog(
+                                    it.url
+                                )
+                            )
                         }
 
                         is DetailUiEffect.RateMovie -> {
-//                            findNavController().safeNavigate(
-//                                DetailFragmentDirections.actionDetailToRating(
-//                                    movieName = it.movieTitle,
-//                                    rating = it.rating
-//                                )
-//                            )
+                            findNavController().safeNavigate(
+                                DetailFragmentDirections.actionDetailToRating(
+                                    movieName = it.movieTitle,
+                                    rating = it.rating
+                                )
+                            )
                         }
                     }
                 }

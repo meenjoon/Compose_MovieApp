@@ -1,4 +1,4 @@
-package com.mbj.compose_movieapp.ui.components.dialog.components.content
+package com.mbj.compose_movieapp.ui.components.dialogs.components.content
 
 import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.padding

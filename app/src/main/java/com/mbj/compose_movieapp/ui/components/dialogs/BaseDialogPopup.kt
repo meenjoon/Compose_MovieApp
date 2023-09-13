@@ -1,6 +1,5 @@
-package com.mbj.compose_movieapp.ui.components.dialog
+package com.mbj.compose_movieapp.ui.components.dialogs
 
-import android.app.Dialog
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -11,9 +10,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
-import com.mbj.compose_movieapp.ui.components.dialog.components.button.DialogButtonsColumn
-import com.mbj.compose_movieapp.ui.components.dialog.components.content.DialogContentWrapper
-import com.mbj.compose_movieapp.ui.components.dialog.components.title.DialogTitleWrapper
+import com.mbj.compose_movieapp.ui.components.dialogs.components.button.DialogButtonsColumn
+import com.mbj.compose_movieapp.ui.components.dialogs.components.content.DialogContentWrapper
+import com.mbj.compose_movieapp.ui.components.dialogs.components.title.DialogTitleWrapper
 import com.mbj.compose_movieapp.ui.models.dialog.DialogButton
 import com.mbj.compose_movieapp.ui.models.dialog.DialogContent
 import com.mbj.compose_movieapp.ui.models.dialog.DialogText

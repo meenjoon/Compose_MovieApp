@@ -1,4 +1,4 @@
-package com.mbj.compose_movieapp.ui.components.dialog.components.title
+package com.mbj.compose_movieapp.ui.components.dialogs.components.title
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
