@@ -9,6 +9,7 @@ buildscript {
         }
     }
     dependencies {
+        classpath("com.google.dagger:hilt-android-gradle-plugin:2.45")
         classpath("com.android.tools:r8:8.2.16-dev")
     }
 }
