@@ -7,9 +7,9 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import kr.co.fastcampus.part4plus.movieapp.library.network.retrofit.NetworkRequestFactory
-import kr.co.fastcampus.part4plus.movieapp.library.network.retrofit.NetworkRequestFactoryImpl
-import kr.co.fastcampus.part4plus.movieapp.library.network.retrofit.StringConverterFactory
+import com.mbj.compose_movieapp.library.network.retrofit.NetworkRequestFactory
+import com.mbj.compose_movieapp.library.network.retrofit.NetworkRequestFactoryImpl
+import com.mbj.compose_movieapp.library.network.retrofit.StringConverterFactory
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

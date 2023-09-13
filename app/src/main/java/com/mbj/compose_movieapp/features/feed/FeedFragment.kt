@@ -7,14 +7,22 @@ import android.view.ViewGroup
 import androidx.compose.material.Text
 import androidx.compose.ui.platform.ComposeView
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import com.mbj.compose_movieapp.features.feed.presentation.viewmodel.FeedViewModel
 import com.mbj.compose_movieapp.ui.theme.Compose_MovieAppTheme
+import dagger.hilt.android.AndroidEntryPoint
 
-class FeedFragment: Fragment() {
+@AndroidEntryPoint
+class FeedFragment : Fragment() {
+
+    private val viewModel: FeedViewModel by viewModels()
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        viewModel.getMovies()
         return ComposeView(requireContext()).apply {
             setContent {
                 Compose_MovieAppTheme {

@@ -8,7 +8,9 @@ import androidx.compose.material.Text
 import androidx.compose.ui.platform.ComposeView
 import androidx.fragment.app.Fragment
 import com.mbj.compose_movieapp.ui.theme.Compose_MovieAppTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class DetailFragment: Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
