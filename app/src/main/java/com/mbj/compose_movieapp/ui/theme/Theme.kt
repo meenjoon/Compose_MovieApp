@@ -6,8 +6,10 @@ import androidx.compose.material.Shapes
 import androidx.compose.material.Typography
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.ReadOnlyComposable
 import androidx.compose.runtime.staticCompositionLocalOf
 import com.mbj.compose_movieapp.ui.theme.color.ColorSet
+import com.mbj.compose_movieapp.ui.theme.color.MyColors
 
 private val LocalColors = staticCompositionLocalOf { ColorSet.Red.LightColors }
 
@@ -38,3 +40,8 @@ fun Compose_MovieAppTheme(
         )
     }
 }
+
+val MaterialTheme.colorScheme: MyColors
+    @Composable
+    @ReadOnlyComposable
+    get() = LocalColors.current
