@@ -7,11 +7,27 @@
     <fragment
         android:id="@+id/feed_fragment"
         android:name="com.mbj.compose_movieapp.features.feed.FeedFragment"
-        android:label="Feed" />
+        android:label="Feed">
+        <action
+            android:id="@+id/action_feed_to_detail"
+            app:destination="@id/detail_fragment"
+            app:launchSingleTop="true" />
+
+<!--        <action-->
+<!--            android:id="@+id/action_feed_to_info"-->
+<!--            app:launchSingleTop="true"-->
+<!--            />-->
+<!--        &lt;!&ndash;            app:destination="@id/info_fragment"&ndash;&gt;-->
+
+    </fragment>
 
     <fragment
-        android:id="@+id/detail_frgment"
+        android:id="@+id/detail_fragment"
         android:name="com.mbj.compose_movieapp.features.detail.DetailFragment"
-        android:label="Detail" />
+        android:label="Detail">
+        <argument
+            android:name="movieName"
+            app:argType="string" />
+    </fragment>
 
 </navigation>
