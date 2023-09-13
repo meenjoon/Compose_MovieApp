@@ -5,9 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.compose.material.Text
+import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.platform.ComposeView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import com.mbj.compose_movieapp.features.feed.presentation.screen.FeedScreen
 import com.mbj.compose_movieapp.features.feed.presentation.viewmodel.FeedViewModel
 import com.mbj.compose_movieapp.ui.theme.Compose_MovieAppTheme
 import dagger.hilt.android.AndroidEntryPoint
@@ -25,7 +27,10 @@ class FeedFragment : Fragment() {
         return ComposeView(requireContext()).apply {
             setContent {
                 Compose_MovieAppTheme {
-                    Text("FeedFragment")
+                    FeedScreen(
+                        feedStateHolder = viewModel.output.feedState.collectAsState(),
+                        input = viewModel.input,
+                    )
                 }
             }
         }
