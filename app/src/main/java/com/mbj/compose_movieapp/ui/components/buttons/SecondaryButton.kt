@@ -1,4 +1,4 @@
-package com.mbj.compose_movieapp.ui.components.movie.buttons
+package com.mbj.compose_movieapp.ui.components.buttons
 
 import androidx.annotation.StringRes
 import androidx.compose.foundation.BorderStroke
@@ -21,7 +21,7 @@ import com.mbj.compose_movieapp.ui.theme.Paddings
 import com.mbj.compose_movieapp.ui.theme.colorScheme
 
 @Composable
-fun SecondaryBorderlessButton(
+fun SecondaryButton(
     modifier: Modifier = Modifier,
     @StringRes id: Int? = null,
     text: String = "",
@@ -31,6 +31,10 @@ fun SecondaryBorderlessButton(
         modifier = modifier.fillMaxWidth(),
         shape = MaterialTheme.shapes.large,
         onClick = onClick,
+        border = BorderStroke(
+            2.dp,
+            MaterialTheme.colorScheme.secondary
+        ),
         colors = ButtonDefaults.buttonColors(
             backgroundColor = MaterialTheme.colorScheme.background,
             contentColor = MaterialTheme.colorScheme.secondary,
@@ -53,9 +57,9 @@ fun SecondaryBorderlessButton(
 
 @Preview
 @Composable
-fun SecondaryBorderlessButtonPreview() {
+fun SecondaryButtonPreview() {
     Compose_MovieAppTheme {
-        SecondaryBorderlessButton(
+        SecondaryButton(
             text = "CANCEL"
         ) {}
     }
