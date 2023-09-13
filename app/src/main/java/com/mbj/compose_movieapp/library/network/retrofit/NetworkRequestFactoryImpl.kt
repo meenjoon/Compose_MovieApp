@@ -1,4 +1,4 @@
-package kr.co.fastcampus.part4plus.movieapp.library.network.retrofit
+package com.mbj.compose_movieapp.library.network.retrofit
 
 import com.google.gson.Gson
 import com.mbj.compose_movieapp.library.network.api.ApiService

@@ -1,4 +1,4 @@
-package kr.co.fastcampus.part4plus.movieapp.library.network.retrofit
+package com.mbj.compose_movieapp.library.network.retrofit
 
 import com.mbj.compose_movieapp.library.network.model.ApiResult
 import com.mbj.compose_movieapp.library.network.model.NetworkRequestInfo
